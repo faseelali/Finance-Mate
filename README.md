@@ -1,6 +1,6 @@
-# Money Mate 💰📊
+# Finance Mate 💰📊
 
-**Money Mate** is a personal finance tracker that helps you manage your expenses efficiently. With features like budget setting, expense tracking, and visual reports, you can take control of your spending habits.
+**Finance Mate** is a personal finance tracker that helps you manage your expenses efficiently. With features like budget setting, expense tracking, and visual reports, you can take control of your spending habits.
 
 ## Features 🚀
 - 📂 **Category-based Tracking** – Organize expenses under custom categories.
