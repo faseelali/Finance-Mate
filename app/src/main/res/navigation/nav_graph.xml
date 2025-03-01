@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.financeapp.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_addExpense"
+            app:destination="@id/addExpenseFragment" />
+        <action
+            android:id="@+id/action_home_to_budget"
+            app:destination="@id/budgetFragment" />
+        <action
+            android:id="@+id/action_home_to_reports"
+            app:destination="@id/reportsFragment" />
+        <action
+            android:id="@+id/action_home_to_addCategory"
+            app:destination="@id/addCategoryFragment" />
+        <action
+            android:id="@+id/action_home_to_categoryExpenses"
+            app:destination="@id/categoryExpensesFragment">
+            <argument
+                android:name="category"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addExpenseFragment"
+        android:name="com.example.financeapp.expense.AddExpenseFragment"
+        tools:layout="@layout/fragment_add_expense" />
+
+    <fragment
+        android:id="@+id/budgetFragment"
+        android:name="com.example.financeapp.budget.BudgetFragment"
+        tools:layout="@layout/fragment_budget" />
+
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.example.financeapp.reports.ReportsFragment"
+        tools:layout="@layout/fragment_reports" />
+
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="com.example.financeapp.addCategory.AddCategoryFragment"
+        tools:layout="@layout/fragment_add_category" />
+
+    <fragment
+        android:id="@+id/categoryExpensesFragment"
+        android:name="com.example.financeapp.categoryExpenses.CategoryExpensesFragment"
+        tools:layout="@layout/fragment_category_expenses">
+        <argument
+            android:name="category"
+            app:argType="string" />
+    </fragment>
+</navigation>
